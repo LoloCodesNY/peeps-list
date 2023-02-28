@@ -87,8 +87,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-  margin: 0;
+* {
+  margin: auto;
   padding: 0;
 }
 
@@ -96,6 +96,7 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  text-align: center;
   width: 100%;
 }
 
@@ -104,13 +105,17 @@ body {
 }
 
 img {
-  width: 90%;
+  width: 75%;
 }
 
 h1 {
 }
 
 h2 {
+}
+
+.move-center {
+  padding: 0, 0, 0, 30px;
 }
 
 /* ==========================================================================
