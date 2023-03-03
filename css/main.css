@@ -118,6 +118,13 @@ button {
   padding-top: 5%;
 }
 
+.home-button {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+
 .filter {
   padding-top: 5%;
 }
@@ -132,6 +139,7 @@ button {
 
 img {
   width: 90%;
+  padding-top: 8%;
 }
 
 h1 {
@@ -151,6 +159,7 @@ li {
   font-size: 1.25rem;
   font-weight: 600;
   width: 90%;
+  padding-top: 8%;
 }
 
 p {
@@ -162,12 +171,16 @@ p span {
   font-style: normal;
 }
 
-.dark-mode {
+.dark-mode-theme {
   background-color: #181818;
   color: #b3b3b3;
 }
 .move-center {
   padding: 0, 0, 0, 30px;
+}
+
+footer {
+  padding-bottom: 15%;
 }
 
 /* ==========================================================================
