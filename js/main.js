@@ -15,8 +15,9 @@ let selection = "All Flavors";
 darkModeButton.addEventListener("click", function () {
   if (body.classList.contains("dark-mode-theme")) {
     body.classList.remove("dark-mode-theme");
-    darkModeButton.innerText = "Dark Mode";
+    darkModeButton.classList.remove("light-mode");
     darkModeButton.classList.add("dark-mode");
+    darkModeButton.innerText = "Dark Mode";
   } else {
     body.classList.add("dark-mode-theme");
     darkModeButton.classList.add("light-mode");

@@ -119,7 +119,7 @@ textarea {
 
 .home-button {
   font-size: 1.05em;
-  width: 33%;
+  width: 20%;
   border-radius: 25px;
   position: fixed;
   bottom: 2%;
@@ -319,6 +319,7 @@ footer {
   .filter {
     padding-top: 0;
     margin-right: 0;
+    margin-left: 0%;
   }
 
   h1 {
@@ -332,6 +333,10 @@ footer {
   li {
     font-size: 2.25rem;
   }
+
+  p {
+    padding-bottom: 10%;
+  }
   img {
     width: 75%;
   }
@@ -341,7 +346,8 @@ footer {
 
 @media (min-width: 1200px) {
   .buttons {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    justify-content: space-between;
   }
   .home-button {
     width: 20%;
@@ -349,19 +355,30 @@ footer {
   .dark-mode {
     width: 20%;
   }
+
+  .filter-option {
+    font-size: 1rem;
+  }
+
   h1 {
-    font-size: 4rem;
+    font-size: 3.25rem;
+    margin: 5% 0;
   }
 
   h2 {
-    font-size: 3rem;
-  }
-  img {
-    width: 45%;
+    font-size: 2.5rem;
   }
 
-  p {
-    font-size: 2rem;
+  ol {
+    width: 70%;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  li {
+    font-size: 1.5rem;
   }
 }
 
