@@ -93,6 +93,10 @@ textarea {
   font-family: helvetica;
 }
 
+html {
+  scroll-behavior: auto;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -124,6 +128,26 @@ textarea {
   position: fixed;
   bottom: 2%;
   right: 2%;
+  cursor: pointer;
+}
+
+.footer-button {
+  font-size: 1.05em;
+  width: 20%;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  cursor: pointer;
+}
+
+.load-more-button {
+  font-size: 1.05em;
+  width: 20%;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 2%;
+  right: 40%;
   cursor: pointer;
 }
 
@@ -179,6 +203,10 @@ h2 {
   font-weight: lighter;
 }
 
+h3 {
+  padding: 1rem 0 1rem 0;
+}
+
 li {
   font-size: 1.25rem;
   font-weight: 600;
@@ -207,7 +235,14 @@ p span {
 }
 
 footer {
-  padding-bottom: 15%;
+  padding-bottom: 30%;
+  padding-top: 15%;
+}
+
+.contact {
+  border: 5px dotted black;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 /* ==========================================================================
@@ -304,16 +339,8 @@ footer {
   .buttons {
     font-size: 1.5em;
     width: 100%;
-    height: 5%;
+    height: 3rem;
     justify-content: space-evenly;
-  }
-
-  .dark-mode {
-    height: 3rem;
-  }
-
-  .home-button {
-    height: 3rem;
   }
 
   .filter {
@@ -340,6 +367,16 @@ footer {
   img {
     width: 75%;
   }
+
+  footer {
+    padding-bottom: 30%;
+    padding-top: 15%;
+  }
+
+  .contact {
+    font-size: 1.75rem;
+    padding: 5%;
+  }
 }
 
 /* DESKTOP STYLES */
@@ -349,6 +386,7 @@ footer {
     font-size: 1rem;
     justify-content: space-between;
   }
+
   .home-button {
     width: 20%;
   }
@@ -379,6 +417,17 @@ footer {
 
   li {
     font-size: 1.5rem;
+  }
+
+  footer {
+    width: 50%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .contact {
+    font-size: 1.25rem;
+    margin-bottom: 5%;
   }
 }
 

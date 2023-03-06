@@ -9,6 +9,7 @@ const sortByHoliday = document.querySelector(".select");
 const holidayOption = document.querySelector(".filter-option");
 const peepListItems = document.querySelectorAll(".peep");
 let selection = "All Flavors";
+const jumpToFooterButton = document.querySelector(".footer-button");
 
 //Dark mode
 
@@ -25,9 +26,12 @@ darkModeButton.addEventListener("click", function () {
   }
 });
 
-//Scroll to top button
+//Scroll to top button, jump to footer button
 
 backToTopButton.onclick = () => window.scrollTo({ top: 0 });
+// jumpToFooterButton.onclick = () => window.scrollTo({ top: 500 });
+jumpToFooterButton.onclick = () =>
+  window.scrollTo(0, document.body.scrollHeight);
 
 //Infinite scroll and load more button
 
