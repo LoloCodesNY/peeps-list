@@ -29,76 +29,55 @@ darkModeButton.addEventListener("click", function () {
 //Scroll to top button, jump to footer button
 
 backToTopButton.onclick = () => window.scrollTo({ top: 0 });
-// jumpToFooterButton.onclick = () => window.scrollTo({ top: 500 });
+
 jumpToFooterButton.onclick = () =>
   window.scrollTo(0, document.body.scrollHeight);
 
 //Infinite scroll and load more button
 
-//Sort by holiday: Halloween, Christmas, Easter
+//Sort by holiday: Halloween, Christmas, Easter, back to All Flavors
 
-// sortByHoliday.addEventListener("change", function (e) {
-//   selection = e.target.value;
-//   if (selection === "Halloween") {
-//     if (!peepListItems.classList.contains("Halloween")) {
-//     }
-//     peepListItems.classList.add("hide");
-//   }
-// });
+sortByHoliday.addEventListener("change", function (e) {
+  selection = e.target.value;
+  if (selection === "Halloween") {
+    for (let peep of peepListItems) {
+      peep.classList.remove("hide");
+      if (!peep.classList.contains("halloween")) {
+        peep.classList.add("hide");
+      }
+    }
+  }
+});
 
-// sortByHoliday.addEventListener("change", function (e) {
-//   selection = e.target.value;
-//   if (selection === "Halloween") {
-//     for (let peep of peepListItems) {
-//       if (!peep.classList.contains("halloween")) {
-//         peep.classList.add("hide");
-//       }
-//     }
-//   }
-// });
+sortByHoliday.addEventListener("change", function (e) {
+  selection = e.target.value;
+  if (selection === "Christmas") {
+    for (let peep of peepListItems) {
+      peep.classList.remove("hide");
+      if (!peep.classList.contains("christmas")) {
+        peep.classList.add("hide");
+      }
+    }
+  }
+});
 
-// sortByHoliday.addEventListener("change", function (e) {
-//   selection = e.target.value;
-//   if (selection === "Christmas") {
-//     for (let peep of peepListItems) {
-//       if (peep.classList.contains("hide")) {
-//         peep.classList.remove("hide");
-//       }
-//       if (!peep.classList.contains("christmas")) {
-//         peep.classList.add("hide");
-//       }
-//     }
-//   }
-// });
+sortByHoliday.addEventListener("change", function (e) {
+  selection = e.target.value;
+  if (selection === "Easter") {
+    for (let peep of peepListItems) {
+      peep.classList.remove("hide");
+      if (!peep.classList.contains("easter")) {
+        peep.classList.add("hide");
+      }
+    }
+  }
+});
 
-// sortByHoliday.addEventListener("change", function (e) {
-//   selection = e.target.value;
-//   if (selection === "Easter") {
-//     for (let peep of peepListItems) {
-//       if (!peep.classList.contains("easter")) {
-//         peep.classList.add("hide");
-//       }
-//     }
-//   }
-// });
-
-// const allFlavorsSort = sortByHoliday.addEventListener("change", function (e) {
-//   selection = e.target.value;
-//   if (selection === "All Flavors") {
-//     for (let peep of peepListItems) {
-//       peep.classList.remove("hide");
-//     }
-//   }
-// });
-
-// sortByHoliday.addEventListener("change", function (e) {
-//   selection = e.target.value;
-//   if (selection === "Halloween") {
-//     for (let peep of peepListItems) {
-//       if (peep.classList.contains("halloween")) {
-//         console.log(peep);
-//         return peep;
-//       }
-//     }
-//   }
-// });
+const allFlavorsSort = sortByHoliday.addEventListener("change", function (e) {
+  selection = e.target.value;
+  if (selection === "All Flavors") {
+    for (let peep of peepListItems) {
+      peep.classList.remove("hide");
+    }
+  }
+});
