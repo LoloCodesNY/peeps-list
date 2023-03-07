@@ -35,6 +35,18 @@ jumpToFooterButton.onclick = () =>
 
 //Infinite scroll and load more button
 
+const infiniteList = document.querySelector("#infinite-list");
+
+//add 10 items
+let nextItem = 1;
+const loadMore = function () {
+  for (let peep of peepListItems) {
+    let peep = document.createElement("li");
+    infiniteList.appendChild(peep);
+    console.log(peep);
+  }
+};
+
 //Sort by holiday: Halloween, Christmas, Easter, back to All Flavors
 
 sortByHoliday.addEventListener("change", function (e) {

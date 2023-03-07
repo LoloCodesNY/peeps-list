@@ -185,7 +185,11 @@ html {
   display: block;
 }
 
-img {
+.header-art-style {
+  width: 30%;
+}
+
+.peep-img {
   width: 90%;
   box-shadow: 1rem 1rem 1rem 1rem;
 }
@@ -193,12 +197,12 @@ img {
 h1 {
   font-size: 2.25rem;
   font-weight: 700;
-  margin: 2%, 0, 2%, 0;
 }
 
 h2 {
   font-size: 1.65rem;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-style: italic;
   font-weight: lighter;
 }
@@ -404,7 +408,7 @@ footer {
 
   h1 {
     font-size: 3.25rem;
-    margin: 5% 0;
+    margin: 3% 0;
   }
 
   h2 {
@@ -412,14 +416,22 @@ footer {
   }
 
   ol {
+    width: 60%;
+  }
+
+  .peep {
     width: 70%;
   }
 
-  img {
+  .peep-img {
     width: 50%;
   }
 
-  li {
+  .header-art-style {
+    width: 20%;
+  }
+
+  .peep {
     font-size: 1.5rem;
   }
 
