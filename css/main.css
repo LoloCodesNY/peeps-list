@@ -207,6 +207,10 @@ h3 {
   padding: 1rem 0 1rem 0;
 }
 
+.peeps-link {
+  font-size: 1.15rem;
+}
+
 li {
   font-size: 1.25rem;
   font-weight: 600;
@@ -359,6 +363,10 @@ footer {
 
   h2 {
     font-size: 3.25rem;
+  }
+
+  .peeps-link {
+    font-size: 1.75rem;
   }
 
   li {
