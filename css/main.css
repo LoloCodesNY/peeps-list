@@ -411,12 +411,27 @@ footer {
     font-size: 2.5rem;
   }
 
-  ol {
+  /* ol {
     width: 60%;
   }
 
   .peep {
     width: 70%;
+  } */
+
+  ol {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .peep {
+    width: 30%;
+  }
+
+  li {
+    padding: 5;
+    margin: 0;
   }
 
   .peep-img {
