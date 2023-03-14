@@ -10,6 +10,10 @@ const holidayOption = document.querySelector(".filter-option");
 const peepListItems = document.querySelectorAll(".peep");
 let selection = "All Flavors";
 const jumpToFooterButton = document.querySelector(".footer-button");
+const loadMoreButton = document.querySelector(".load-more-button");
+
+console.log(peepListItems);
+console.log(peepListItems.length);
 
 //Dark mode
 
@@ -35,17 +39,25 @@ jumpToFooterButton.onclick = () =>
 
 //Infinite scroll and load more button
 
-const infiniteList = document.querySelector("#infinite-list");
+let scrolly = document.querySelector("window.scrollY");
+console.log(window.scrollY); //distance from top of page user has scrolled
 
-//add 10 items
-let nextItem = 1;
-const loadMore = function () {
-  for (let peep of peepListItems) {
-    let peep = document.createElement("li");
-    infiniteList.appendChild(peep);
-    console.log(peep);
+console.log(window.innerHeight); //total height of browser window
+
+console.log(document.body.offsetHeight); //height of everything in the body
+
+// Check to see if scrolling near bottom of page; load more items
+
+const getPeeps = function () {};
+
+window.addEventListener("scroll", function () {
+  if (
+    window.scrollY + window.innerHeight >=
+    document.body.offsetHeight - 1000
+  ) {
+    getPeeps();
   }
-};
+});
 
 //Sort by holiday: Halloween, Christmas, Easter, back to All Flavors
 

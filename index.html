@@ -23,12 +23,12 @@
 
   <body>
     <!-- Add your site or application content here -->
-    <div class="container">
+    <div class="container" onScroll="handleOnScroll();">
       <div class="content-wrapper">
         <header id="jump-to-top">
           <div class="buttons">
             <button class="home-button">Back to Top</button>
-            <button class="load-more-button">Load More</button>
+            <!--<button class="load-more-button">Load More</button>-->
             <button class="footer-button">Jump to Footer</button>
             <button class="dark-mode">Dark Mode</button>
             <div class="filter">
@@ -42,7 +42,7 @@
             </div>
           </div>
           <div class="header-art">
-            <h1>The Ultimate Peeps Flavors List</h1>
+            <h1>Every Peeps Flavor Ever</h1>
             <img
               class="header-art-style"
               src="img/header-art.png"
@@ -52,7 +52,7 @@
           <h2>An unranked list of every Peeps flavor ever (so far).</h2>
         </header>
         <main>
-          <ol id="infinite-list">
+          <ol class="infinite-list">
             <li class="peep">
               <p>
                 <span class="peep-title"> Kettle Corn Peeps: </span> Kettle Corn
