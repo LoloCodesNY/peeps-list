@@ -93,6 +93,10 @@ textarea {
   font-family: helvetica;
 }
 
+body {
+  background-color: #fbfbfb;
+}
+
 html {
   scroll-behavior: auto;
 }
@@ -111,8 +115,7 @@ html {
 
 .buttons {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 5%;
 }
 
