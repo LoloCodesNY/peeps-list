@@ -124,6 +124,7 @@ html {
   bottom: 2%;
   right: 2%;
   cursor: pointer;
+  padding: 10px;
 }
 
 .footer-button {
@@ -134,16 +135,7 @@ html {
   bottom: 2%;
   left: 2%;
   cursor: pointer;
-}
-
-.load-more-button {
-  font-size: 1.05em;
-  width: 20%;
-  border-radius: 25px;
-  position: fixed;
-  bottom: 2%;
-  right: 40%;
-  cursor: pointer;
+  padding: 10px;
 }
 
 .dark-mode {
@@ -186,7 +178,7 @@ html {
 }
 
 .peep-img {
-  width: 90%;
+  width: 50%;
   box-shadow: 1rem 1rem 1rem 1rem;
 }
 
@@ -376,8 +368,13 @@ footer {
   p {
     padding-bottom: 10%;
   }
+
   img {
     width: 75%;
+  }
+
+  .peep-img {
+    width: 50%;
   }
 
   footer {
@@ -402,6 +399,7 @@ footer {
   .home-button {
     width: 20%;
   }
+
   .dark-mode {
     width: 20%;
   }
