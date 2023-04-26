@@ -169,6 +169,10 @@ html {
   width: 45%;
 }
 
+.hide {
+  display: none;
+}
+
 .header-art-style {
   width: 90%;
   padding-bottom: 4%;
