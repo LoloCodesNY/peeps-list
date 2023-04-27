@@ -94,7 +94,8 @@ textarea {
 }
 
 body {
-  background-color: #fbfbfb;
+  /*background-color: #fbfbfb;*/
+  background-color: #f7f8ea;
 }
 
 html {
@@ -116,9 +117,11 @@ html {
 .buttons {
   display: flex;
   justify-content: space-between;
-  padding: 5%;
-  border: 2px dotted black;
-  margin-top: 5%;
+  align-items: center;
+  background-color: #d3f1f5;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .home-button {
@@ -145,7 +148,7 @@ html {
 
 .dark-mode {
   font-size: 1.05em;
-  width: 33%;
+  width: 30%;
   border-radius: 25px;
   background-color: #181818;
   color: #b3b3b3;
@@ -166,21 +169,28 @@ html {
 }
 
 .select {
-  width: 45%;
+  width: 60%;
 }
 
 .hide {
   display: none;
 }
 
+.logo-style {
+  width: 20%;
+  padding: 5%;
+  padding-left: 10%;
+}
+
 .header-art-style {
   width: 90%;
   padding-bottom: 4%;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
 }
 
 .peep-img {
   width: 50%;
-  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.1);
   aspect-ratio: 1/1;
   object-fit: contain;
 }
@@ -228,11 +238,11 @@ p {
 }
 
 .dark-mode-theme .buttons {
-  border: 2px dotted #b3b3b3;
+  background-color: #3d3d3d;
 }
 
 .dark-mode-theme .contact {
-  border: 5px dotted #b3b3b3;
+  background-color: #3d3d3d;
 }
 
 .dark-mode-theme .email {
@@ -240,7 +250,7 @@ p {
 }
 
 .dark-mode-theme .peep-img {
-  box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgb(59, 57, 57);
+  box-shadow: none;
 }
 
 .move-center {
@@ -253,9 +263,11 @@ footer {
 }
 
 .contact {
-  border: 5px dotted black;
   margin-bottom: 5%;
   padding-bottom: 5%;
+  padding: 5%;
+  background-color: #d3f1f5;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
 }
 
 /* ==========================================================================
@@ -352,7 +364,13 @@ footer {
   .buttons {
     font-size: 1.5em;
     height: 3rem;
-    justify-content: space-evenly;
+    padding: 5%;
+  }
+
+  .logo-style {
+    width: 15%;
+    padding: 0;
+    margin: 0;
   }
 
   .filter {
@@ -410,8 +428,12 @@ footer {
   .buttons {
     font-size: 1rem;
     justify-content: space-between;
-    padding: 2%;
+    padding: 3%;
     margin-top: 2%;
+  }
+
+  .logo-style {
+    width: 10%;
   }
 
   .home-button {
