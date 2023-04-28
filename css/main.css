@@ -94,7 +94,6 @@ textarea {
 }
 
 body {
-  /*background-color: #fbfbfb;*/
   background-color: #f7f8ea;
 }
 
@@ -116,12 +115,11 @@ html {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-self: space-between;
   align-items: center;
   background-color: #d3f1f5;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 3%;
 }
 
 .home-button {
@@ -148,10 +146,11 @@ html {
 
 .dark-mode {
   font-size: 1.05em;
-  width: 30%;
+  width: 75%;
   border-radius: 25px;
   background-color: #181818;
   color: #b3b3b3;
+  padding: 2%;
 }
 
 .light-mode {
@@ -160,29 +159,19 @@ html {
 }
 
 .filter {
-  padding-top: 5%;
   font-size: 1.05em;
 }
 
 .filter-option {
-  font-size: 0.5em;
-}
-
-.select {
-  width: 60%;
+  font-size: 0.75em;
 }
 
 .hide {
   display: none;
 }
-a {
-  line-height: 0;
-}
 
 .logo-style {
-  width: 20%;
-  padding: 5%;
-  padding-left: 15%;
+  width: 40%;
 }
 
 .header-art-style {
@@ -240,8 +229,20 @@ p {
   color: #b3b3b3;
 }
 
+.dark-mode-theme a:visited {
+  color: #b3b3b3;
+}
+
 .dark-mode-theme .buttons {
   background-color: #3d3d3d;
+}
+
+.dark-mode-theme .footer-button {
+  background-color: #b3b3b3;
+}
+
+.dark-mode-theme .home-button {
+  background-color: #b3b3b3;
 }
 
 .dark-mode-theme .contact {
@@ -254,6 +255,10 @@ p {
 
 .dark-mode-theme .peep-img {
   box-shadow: none;
+}
+
+.dark-mode-theme .select {
+  background-color: #b3b3b3;
 }
 
 .move-center {
@@ -366,20 +371,10 @@ footer {
 @media (min-width: 768px) {
   .buttons {
     font-size: 1.5em;
-    height: 3rem;
-    padding: 5%;
   }
 
-  .logo-style {
-    width: 15%;
-    padding-left: 12%;
-    margin: 0;
-  }
-
-  .filter {
-    padding-top: 0;
-    margin-right: 0;
-    margin-left: 0%;
+  .dark-mode {
+    width: 30%;
   }
 
   .filter-option {
@@ -430,13 +425,10 @@ footer {
 @media (min-width: 1200px) {
   .buttons {
     font-size: 1rem;
-    justify-content: space-between;
-    padding: 3%;
-    margin-top: 2%;
   }
 
   .logo-style {
-    width: 10%;
+    width: 25%;
   }
 
   .home-button {
@@ -444,7 +436,8 @@ footer {
   }
 
   .dark-mode {
-    width: 10%;
+    width: 15%;
+    padding: 1%;
   }
 
   .footer-button {
