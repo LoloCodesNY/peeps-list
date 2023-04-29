@@ -90,7 +90,9 @@ textarea {
 * {
   margin: auto;
   padding: 0;
-  font-family: "Calibri";
+  /* color: #000; */
+  color: #333333;
+  font-family: "Asap", sans-serif;
 }
 
 body {
@@ -181,9 +183,13 @@ html {
 
 .caption {
   font-size: 1.2rem;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   font-style: italic;
+}
+
+.video-link {
+  text-decoration: none;
 }
 
 .peep-img {
@@ -459,7 +465,7 @@ footer {
   }
 
   .caption {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   h1 {
