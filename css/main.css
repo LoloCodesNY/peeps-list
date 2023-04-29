@@ -90,13 +90,12 @@ textarea {
 * {
   margin: auto;
   padding: 0;
-  /* color: #000; */
-  color: #333333;
   font-family: "Asap", sans-serif;
 }
 
 body {
   background-color: #f7f8ea;
+  color: #333333;
 }
 
 html {
@@ -238,6 +237,10 @@ p {
 
 .dark-mode-theme {
   background-color: #181818;
+  color: #c6c5c5;
+}
+
+.dark-mode-theme label {
   color: #b3b3b3;
 }
 
