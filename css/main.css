@@ -176,8 +176,14 @@ html {
 
 .header-art-style {
   width: 90%;
-  padding-bottom: 4%;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+
+.caption {
+  font-size: 1.2rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-style: italic;
 }
 
 .peep-img {
@@ -381,6 +387,10 @@ footer {
     font-size: 0.75rem;
   }
 
+  .caption {
+    font-size: 2.15rem;
+  }
+
   h1 {
     font-size: 4.75rem;
   }
@@ -446,6 +456,10 @@ footer {
 
   .filter-option {
     font-size: 1rem;
+  }
+
+  .caption {
+    font-size: 1.75rem;
   }
 
   h1 {
