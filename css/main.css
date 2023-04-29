@@ -187,10 +187,6 @@ html {
   font-style: italic;
 }
 
-.video-link {
-  text-decoration: none;
-}
-
 .peep-img {
   width: 50%;
   box-shadow: 0.15rem 0.15rem 0.15rem 0.15rem rgba(0, 0, 0, 0.1);
