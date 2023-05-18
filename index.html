@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="eng">
+<html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Peeps Flavors List</title>
@@ -44,13 +44,21 @@
           </a>
 
           <div class="filter">
-            <label>Filter by Holiday</label>
-            <select class="select">
-              <option class="filter-option">All Flavors</option>
-              <option class="filter-option">Halloween</option>
-              <option class="filter-option">Christmas</option>
-              <option class="filter-option">Easter</option>
-            </select>
+            <form>
+              <label for="holiday-filter">Filter by Holiday</label>
+              <select class="select" name="holiday-filter" id="holiday-filter">
+                <option class="filter-option" value="all-flavors">
+                  All Flavors
+                </option>
+                <option class="filter-option" value="halloween">
+                  Halloween
+                </option>
+                <option class="filter-option" value="christmas">
+                  Christmas
+                </option>
+                <option class="filter-option" value="easter">Easter</option>
+              </select>
+            </form>
           </div>
         </nav>
 
@@ -68,12 +76,10 @@
               target="_blank"
               class="video-link"
             >
-              <figcaption class="caption">
-                <p class="caption">
-                  &#127925; Get your bunnies for nothing <br />
-                  and your chicks for free &#127925;
-                </p>
-              </figcaption>
+              <p class="caption">
+                &#127925; Get your bunnies for nothing <br />
+                and your chicks for free &#127925;
+              </p>
             </a>
           </figure>
         </div>
