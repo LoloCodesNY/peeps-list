@@ -37,27 +37,27 @@ backToTopButton.onclick = () => window.scrollTo({ top: 0 });
 jumpToFooterButton.onclick = () =>
   window.scrollTo(0, document.body.scrollHeight);
 
-//Infinite scroll and load more button
+// //Infinite scroll and load more button
 
-let scrolly = document.querySelector("window.scrollY");
-console.log(window.scrollY); //distance from top of page user has scrolled
+// let scrolly = document.querySelector("window.scrollY");
+// console.log(window.scrollY); //distance from top of page user has scrolled
 
-console.log(window.innerHeight); //total height of browser window
+// console.log(window.innerHeight); //total height of browser window
 
-console.log(document.body.offsetHeight); //height of everything in the body
+// console.log(document.body.offsetHeight); //height of everything in the body
 
-// Check to see if scrolling near bottom of page; load more items
+// // Check to see if scrolling near bottom of page; load more items
 
-const getPeeps = function () {};
+// const getPeeps = function () {};
 
-window.addEventListener("scroll", function () {
-  if (
-    window.scrollY + window.innerHeight >=
-    document.body.offsetHeight - 1000
-  ) {
-    getPeeps();
-  }
-});
+// window.addEventListener("scroll", function () {
+//   if (
+//     window.scrollY + window.innerHeight >=
+//     document.body.offsetHeight - 1000
+//   ) {
+//     getPeeps();
+//   }
+//});
 
 //Sort by holiday: Halloween, Christmas, Easter, back to All Flavors
 
